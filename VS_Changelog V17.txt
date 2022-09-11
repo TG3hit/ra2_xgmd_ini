@@ -1,0 +1,119 @@
+--------------------------------------
+
+*Release version 17*
+
+Game-play changes:
+=General=
+1.Fixed various weapons' AA range inconsistencies against wobbling jumpjets.
+2.Fixed Naval Shipyards inflicting fatal damage to Tanya upon destruction by Tanya's C4.
+3.Both Underwater animals' (GiantSquid/Dolphin) weapon damage against buildings decreased by 40%.
+4.All 3 MCVs can now be also built from building tab, Pre-requisites are set to Conyard+ServiceDepot/Grinder. MCVs built as such can only be placed adjacent to a Conyard, And they are tied to players' initial faction. MCVs built from building tab have BuiltTimeMultiplier=0.95x.
+5.MCVs built from Warfactory no longer have BuildLimit=1, BuiltTimeMultiplier=0.75x increased to 0.8x, Pre-requisite changed from Warfactory+ServiceDepot/Grinder to WarFactory+TechLab+ServiceDepot/Grinder. 
+6.Spy Plane support power is now available to both Soviet and Allied factions. Soviet can still access this support power via Radar Tower's Component Part upgrade. Allied can access it via Spysat Uplink. Spy Plane's speed increased from 18 to 27, reveal duration decreased from 16 to 10.
+7.All Jumpjets/HoverUnits/Aircrafts' sight decreased by 15%-25% except Kirov Airship.
+8.All 3 basic infantries' FireUp frame increased from 0 to 1.
+9.All 3 Warfactories' HP increased from 1100 to 1300, BuildTimeMultiplier=0.9x removed.
+10.Radiation field's effectiveness against [light] armor decreased from 25% to 20%.
+
+=Allied=
+1.AI's detection chance against disguised Mirage Tank decreased from 20%,10%,5% to 10%,5%,5%(Hard/Medium/Easy).
+2.Moon Breaker AG weapon's warhead effectiveness against buildings increased from 11%,38%,8% to 12%,40%,10%. AA weapon's warhead effectiveness against [medium] armor increased from 80% to 90%
+3.Prism Tank weapon's warhead effectiveness against buildings decreased from 160%,140%,150% to 150%,140%,130%.
+4.Dolphin's pre-requisite changed from Shipyard+TechLab to Shipyard+RoboCenter, warhead effectiveness against infantries decreased from 50%,50%,50% to 45%,45%,45%, weapon Damage/ROF changed from 45/120 to 32/80.
+5.Barracks' HP increased from 650 to 700.
+6.Fixed a bug causing deployed GI sometimes unable to fire weapon at all. 
+7.Allied Spy now has sensor sight of 12 to reveal cloaked and underwater units.
+
+=Soviet=
+1.Terror Drone can no longer infest or attack naval units, its amphibious capability still remains. 
+2.Deployed Terror Drone now generates a single cell shroud to cover itself, firing beam weapon no longer reveals its position.
+3.Kirov Airship weapon's projectile speed increased by 50%, warhead effectiveness against [steel] armor increased from 90% to 100%.
+4.Giant Squid's parasite weapon DPS increased by 50%, additional 25% damage against [light] armor, pre-requisite changed from Shipyard+TechLab to Shipyard+AdvancedPowerPlant.
+5.Heatwave's turn speed increased from 4 to 5, secondary weapon range increased from 6.75 to 7.75.
+6.Siege Chopper missile weapon's warhead effectiveness against [medium] armor decreased from 35% to 30%.
+7.Battle Lab's HP increased from 900 to 950.
+8.Lybian Demolition Truck's weapon effectiveness against infantries increased from 85%,75%,70% to 95%,85%,75%, against [steel] armor increased from 100% to 120%, against [wood] armor decreased from 50% to 35%(can longer one-shot any structures alone). It Now gains the ability to camouflage itself at halt just like Mirage Tank, can now detonate via deploy command.
+9.Iraq Desolator deploy weapon's PercentAtMax decreased from 0.5 to 0.35, deploy weapon's damage can now penetrate Tank Bunker.
+10.Nuclear Missile's radiation level decreased from 2000 to 1500, effectiveness against [wood] armor increased from 65% to 75%.
+
+=Yuri=
+1.Added Crevasse Destroyer ($1400) -- A new naval vessel unlocked by Shipyard+Grinder armed with quad torpedo launchers and anti-air shatterer missile.
+2.Boomer Submarine's sensor sight decreased from 8 to 6, pre-requisite changed from Shipyard+PsychicRadar+Grinder to Shipyard+TechLab. 
+3.Adjusted Waste Repair Facility's repair range, it can no longer reach vehicles inside adjacent Tank Bunkers and deployed Slaveminer. 
+4.Added Harpy VTOL ($900) -- A new dedicated anti-air light drone unlocked by Warfactory+PsychicRadar armed with twin psychic energy weapon and chaos bomb.
+5.Floating Disk HP increased from 500 to 540, pre-requisite changed from Warfactory+PsychicRadar+Grinder to Warfactory+TechLab.
+6.Magnetron's cost increased from 950 to 1450, HP increased from 240 to 290, ROT increased from 5 to 6, weapon damage against buildings increased from 330 to 350, can now enter Tank Bunker.
+7.Shooting Star SHP changed from Squid to Sonic VXL, no longer immune to mindcontrol/chaos/parasite, HP increased from 220 to 230, ROT decreased from 40 to 14, Sensor range decreased from 7 to 5, updated weapon design and stats, no longer remains cloaked. Added secondary magnetic beam weapon against close shore targets except infantry.
+8.Grinder's HP increased from 900 to 950.
+9.Tank Bunker's damage amplification increased from 20% to 25%, no longer provide radiation immunity to vehicles inside (Radiation site from nuke and other sources can now penetrate and damage vehicles within).
+
+Other changes:
+1.Increased Allied AI's Moon Breaker usage.
+2.Decreased Yuri AI's Floating Disk usage.
+3.Misc warhead animation/particle updates. 
+4.Fixed various AI triggers having incorrect weight values. 
+5.Improved Tech Oil Derrick's money animation logic and system performance, no longer uses a dummy weapon with infinite range.
+6.Added trailer animation for Spy Plane.
+7.Fixed Force Shield animation duration not matching its effect duration.
+8.Increased Soviet AI's Demolition Truck usage.
+9.Slightly reduced the volume and quantity of smoke particles emitted by damaged buildings to improve performance.
+
+--------------------------------------
+
+*公开版本 17*
+
+游戏内容改动:
+=整体=
+1.修复了若干防空武器对浮动悬浮单位时射程动态变化的bug。
+2.修复了谭雅使用C4摧毁船厂导致死亡的bug。
+3.两种水下动物（海豚/乌贼）对建筑伤害减少40%。
+4.MCV在满足同样的建造条件后现在也可以通过建造栏页面进行同时部署，部署范围为任意建造厂近距离周边，建造栏MCV为阵营绑定。以此法建造的MCV拥有0.95x倍建造时间。
+5.取消了重工生产MCV的数量限制=1,以此法生产的MCV拥有0.75x倍建造时间上调至0.8x。重工生产MCV的解锁条件从维修厂/回收站改为维修厂/回收站+高科。 
+6.侦察机现在改为苏盟共有支援技能。苏联解锁侦察机技能条件不变，已就位雷达升级组件。盟军解锁条件为间谍卫星。侦察机速度从18上调至27，侦查时长从16下调至10。
+7.所有空中单位/悬浮单位/飞行兵视野减少15%-25%左右，基洛夫除外。
+8.3种基础步兵的攻击前摇从0帧上调至1帧。
+9.3种重工的血量从1100上调至1300，取消了0.9x倍建造时间。
+10.辐射场对[轻型]装甲的伤害从25%下调至20%。
+
+=盟军=
+1.电脑玩家对伪装单位的识破几率从20%,10%,5%下调至10%,5%,5%（困难/中等/简单）。
+2.月球击碎者对地武器的反建筑伤害从11%,38%,8%上调至12%,40%,10%。对空武器反[中等]装甲伤害从80%上调至90%。
+3.光棱坦克武器的反建筑伤害从160%,140%,150%下调至150%,140%,130%。
+4.海豚解锁条件从船厂+高科改为船厂+遥控中心, 武器的反步兵伤害从50%,50%,50%下调至45%,45%,45%, 武器伤害/攻击间隔从45/120改为32/80。
+5.盟军兵营血量从650上调至700。
+6.修复了部署美国大兵无法攻击的bug。 
+7.盟军间谍现在拥有距离12的反隐侦测效果。
+
+=苏联=
+1.恐怖机器人不再能侵入或攻击水中单位，两栖能力依旧保留。 
+2.部署恐怖机器人现在在自身格产生1格黑幕进行遮蔽，发射远程武器时不再向敌方揭示自身黑幕。
+3.基洛夫武器弹道速度增加50%, 武器反[钢铁]装甲伤害从90%上调至100%。
+4.巨型乌贼侵入伤害增加50%, 对[轻型]装甲造成25%额外伤害, 解锁条件从船厂+高科改为船厂+高级发电厂。
+5.热浪的转身速度从4提升至5，副武器射程从6.75提升至7.75。
+6.武装直升机主武器的反[中等]装甲伤害从35%下调至30%。
+7.苏联科技实验室血量从900上调至950。
+8.利比亚自爆卡车的反步兵伤害从85%,75%,70%上调至95%,85%,75%, 反[钢铁]装甲伤害从100%上调至120%, 反[木质]装甲伤害从50%下调至35%(单个自爆卡车无法秒杀任意建筑)。现在在静止状态时获得伪装能力，可通过热键D触发自爆。
+9.伊拉克辐射工兵部署武器的范围边缘伤害从0.5下调至0.35，部署伤害现在可穿透坦克碉堡。
+10.核弹攻击的辐射场从2000下调至1500，反[木质]装甲伤害从65%上调至75%。
+
+=尤里=
+1.增加新单位裂缝鱼雷舰（$1400）-- 尤里阵营的中型制海舰，装备多管鱼雷发射器和碎裂者防空导弹，解锁条件为船厂+回收站。
+2.雷鸣潜艇反隐侦测距离从8下调至6, 解锁条件从船厂+心灵雷达+回收站改为船厂+高科。
+3.调整了废料维修塔的维修范围，维修范围不再能触及到部署的奴隶矿场和坦克碉堡之内的单位。
+4.增加新单位女妖无人机（$900） -- 尤里阵营的轻型对空飞行器，装备双电浆炮和混乱炸弹，解锁条件为重工+心灵雷达。
+5.镭射幽浮的血量从500上调至540，解锁条件从重工+心灵雷达+回收站改为重工+高科。
+6.磁电坦克价格从950上调至1450，血量从240上调至290，转身速度从5上调至6，反建筑武器伤害从330上调至350，现在可以进驻坦克碉堡。
+7.流星素材从乌贼SHP改为音波VXL，不再免疫寄生/心灵控制/混乱，不再隐形，血量从220上调至230，转身速度从40下调至14，反隐侦测距离从7下调至5，重置了武器素材和数据。增加了近岸攻击的副武器，无法伤害步兵。
+8.部队回收站血量从900上调至950。
+9.坦克碉堡提供的伤害加成从20%上调至25%，不再对进驻单位提供辐射保护。
+
+其他改动:
+1.提升了盟军电脑玩家使用月球击碎者的频率。
+2.降低了尤里电脑玩家使用镭射幽浮的频率。
+3.更新了部分动画效果。
+4.修复了个别触发权重不正确的bug。
+5.更新了科技油井的金钱动画，不再使用武器模拟。
+6.增加了侦察机的尾烟动画。
+7.修复了力场护盾动画效果和实际时长不匹配的bug。
+8.提升了苏联电脑玩家使用自爆卡车的频率。
+9.降低了建筑伤害烟雾粒子效果数量来优化游戏流畅性。

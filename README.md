@@ -1,5 +1,6 @@
 # ra2_xgmd_ini
 ini files of red alert 2
+copyrights belongs to original developers
 
 # usage
 1. pull your target branch

@@ -1,0 +1,69 @@
+<!doctype html public "-//w3c//dtd html 3.2//en">
+
+<html>
+
+<head>
+		<title>
+		</title>
+		<link rel=stylesheet type="text/css" href="formats.css">
+	</head>
+	
+	<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+		
+        <p class="heading" align="center">
+		<br>
+	10. 触发事件指南（中级）  </p>
+        <p>	
+
+
+<b>创建/使用触发事件</b><br><br>
+        触发事件可以不止含有一个事件或者动作。如果一个触发事件含有多个事件，它们所有必须同时为真，触发事件事件才会发生。举一个使用了许多不同事件的胜利条件的例子。 
+<br><br><br>
+
+<b>第1步：加入一个新的变量</b><br><br>
+触发事件：创建一个胜利条件，既需要把敌人摧毁，又要撤退到撤离地点。<br><br> 
+在编辑菜单下，选择“Local 
+Variables”。加入一个新的变量“0”以及“Enenmy Destoryed”的描述，把初始值设为“0”。 
+<br><br><br>
+
+<b>第2步：建立触发事件</b><br><br>
+建立一个带有一下参数的触发事件：<br><br> 
+a. 名字：“Enemy player killed”<br> 
+b. 事件：“11 House completely destroyed”，参数为敌人机构。<br> 
+c. 动作： 
+
+
+
+</p>
+        <p>-“11 Display text message”，参数“ 1 Objective 1 
+        completed!” -“56 Set Local”，参数“o Enemy Destroyed,0&quot;。<br><br>
+
+        <b>第3步：建立胜利条件</b><br><br>
+        建立带有以下参数的胜利条件：<br> 
+a. 名字“American Win”<br> 
+b. 事件： <br> 
+<img src="pics/wayp.jpg" height=1 width=20>      -  "36 Local is set", 参数 "0 Enemies Destroyed,0"<br>  
+<img src="pics/wayp.jpg" height=1 width=20>      -  "1 Celltag entered", 参数"0 American"<br>  
+c. 动作:<br> 
+<img src="pics/wayp.jpg" height=1 width=20>      -  "11 Display text message", 
+        参数 "2 Objective 2    completed!"<br>  
+<img src="pics/wayp.jpg" height=1 width=20>      -  "1 Win game", 参数 "0 Americans"  
+<br><br><b><br>
+
+
+        第4步：创建地标</b><br>
+        创建一个或者多个带有“01000008 American Win 
+        1”的地标，放到撤离点。“美国”现在“胜利”，如果任何“地标被进入”并且敌人的机构“完全被摧毁”。要创建地标，你也可以使用&quot;place 
+        trigger&quot;按钮在触发事件编辑然后单击你要放的位置。<br><br> 
+
+        现在，你已经设置了一个多部分触发事件。<br><br><br> 
+
+
+        指南原作者：<font size=1>: Thalassicus</font>  
+
+
+
+</p>
+</body>
+
+</html>

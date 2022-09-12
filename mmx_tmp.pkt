@@ -1,0 +1,11 @@
+[MultiMaps]
+1=Shrapnel
+
+;shrapnel mountain
+[Shrapnel]
+Description=NAME:WEEK27
+CD=0,1
+MinPlayers=2
+MaxPlayers=4
+GameMode=standard
+

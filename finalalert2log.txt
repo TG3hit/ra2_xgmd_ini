@@ -1,0 +1,15 @@
+FinalAlert 2(tm) log file
+----------------------
+
+CFinalSunApp::CFinalSunApp() called
+
+
+
+CLoading::CLoading() called
+CFinalSunDlg::OnInitDialog() called
+Updating menu
+CLoading::Load() called
+
+Initializing FSunPackLib::XCC
+Initializing mix files
+InitMixFiles() called. Available memory: 1324912639

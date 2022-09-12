@@ -1,0 +1,62 @@
+<!doctype html public "-//w3c//dtd html 3.2//en">
+
+<html>
+
+<head>
+		<title>
+		</title>
+		<link rel=stylesheet type="text/css" href="formats.css">
+	</head>
+	
+	<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+		
+        <p class="heading" align="center">
+		<br>
+		15. 改变地图的可见部分（中级） 
+	</p>
+        <p>地图的可见部分是玩家可以看见和移动到的地方。许多地图在贯穿整个任务的过程中都在改变此——为了确保玩家在某一时刻完成一个任务。一个如此的任务便是盟军在欧洲的任务（第5关），那你你要毁灭核弹发射井。此任务开始只有一半的地图可见，然后展开以包含新的目标。在此指南中，我们会尝试仅仅显示顶部的一半。
+<br><br><br>
+
+        <b>第1步：理解地图尺寸</b><br><br>
+        在编辑菜单下，选择地图。有一个可编辑的文本框在中间。这是地图的可见部分，在地图窗口中使用蓝线表示。顶端的文本框显示了实际可编辑的地图尺寸。在地图窗口中用红线表示。按顺序，尺寸为：
+<br><br>
+a. 可见地图左界<br> 
+b. 可见地图上界<br> 
+c. 地图剩余部分宽度<br> 
+d. 地图剩余部分高度<br> 
+e. 格式：“左界，上界，宽度，高度”<br><br> 
+
+        <b>第2步：设置高度，宽度和边界</b><br>
+        在第2个文本框中，键入以下：<br>
+a. 把左界设为0（你可以到达离左边最近的地方）<br> 
+b. 把上界设为4。不要把上界设为小于4，否则图像错误会出现。<br> 
+c. 在顶端的文本框中找到宽度。把可见宽度设为理想的值。<br> 
+d. 在顶端的文本框中找到高度。把可见宽度设为地图1/2。精确的计算中间没有必要，你估计便可。<br> 
+        现在可见左界在极左边，右界在极右边，上界尽可能的靠近地图顶部，并且只有地图的一半可见。
+<br><br><br>
+
+        如果你想要在游戏过程中把任何地图可见部分改为仅仅为地图的下半部：<br><br><br>
+
+<b>第1步：新建一个触发事件</b><br>
+        此手册假设玩家使用一个本地变量“5 ResizeMap”来触发地图大小改变。在编辑菜单下，打开触发事件编辑器。创建一个带有一下属性的触发事件： 
+<br><br>
+        <b>a. 名字:</b> "Resize Map 1"<br>  
+<b>b. 重复:</b>  否<br> 
+        <b>c. 事件:</b> "36-Local is set", 参数"5 ResizeMap,0"<br>  
+<b>d. 动作:</b> "40 Resize visible map", 参数:<br> 
+ <img src="pics/wayp.jpg" height=1 width=20>	- 上界 = [把地图分为2半 
+        (地图中央)]<br> 
+ <img src="pics/wayp.jpg" height=1 width=20>	- 左界 = 0<br>  
+ <img src="pics/wayp.jpg" height=1 width=20>	- 右界 = [地图宽]<br> 
+ <img src="pics/wayp.jpg" height=1 width=20>	- 下界 = [把地图高度分为2半 
+        (在加入上界时和加入下半部分相同)]<br><br><br><br> 
+
+
+
+        <font size=1>手册原作者: Thalassicus</font> 
+</p>
+
+
+</body>
+
+</html>
